@@ -3,11 +3,10 @@ import { useState , useEffect } from "react"
 import SearchBar from "./SearchBar"
 import DataBoard from "./DataBoard"
 
-export default function DataModal () { 
+export default function DataModal ( { onIpChange } ) { 
 
   const [ipAddress, setIpAddress] = useState("")
   const [data, setData] = useState(null)
-
 
   const handleSearch = (ip) => {
     setIpAddress(ip)
@@ -22,6 +21,8 @@ export default function DataModal () {
         if (!response.ok) throw new Error("Network response was not ok")
         const data = await response.json()
         setData(data)
+
+        onIpChange(data)
 
       } catch (error) {
         console.error("Error fetching IP data:", error)
