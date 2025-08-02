@@ -10,8 +10,8 @@ export default function App() {
     <>
       <Header />
       <main>
-      <Map />
-      <DataModal />
+        <Map />
+        <DataModal />
       </main>
     </>
   )
