@@ -36,7 +36,7 @@ export default function DataModal ( { onIpChange } ) {
 
 
   return (
-    <div className="absolute z-10 top-12 md:top-16 left-0 pt-6 bg-transparent w-full h-full flex justify-center">
+    <div className="pointer-events-none absolute z-10 top-12 md:top-16 left-0 pt-6 bg-transparent w-full h-full flex justify-center">
       <div className="w-full px-4 flex flex-col items-center text-black gap-y-4 md:gap-y-12">
         <SearchBar onSearch={ (ip) => handleSearch(ip) } />
         <DataBoard ipData={data} />

@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 import { MapContainer, TileLayer, Marker } from "react-leaflet"
 import L from 'leaflet'
 
@@ -17,7 +15,8 @@ export default function Map( { lat, lng } ) {
   })
 
         
-  return(
+  return( 
+
     <MapContainer center={ position } zoom={13} scrollWheelZoom={false} style={{ height: '400px', width: '100%' , zIndex: 0 }}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

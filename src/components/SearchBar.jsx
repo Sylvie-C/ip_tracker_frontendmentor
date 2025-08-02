@@ -16,7 +16,7 @@ export default function SearchBar( { onSearch } ) {
 
   return (
     <form 
-      className="w-full flex justify-center items-center"
+      className="pointer-events-auto w-full flex justify-center items-center"
       onSubmit={ handlesubmit }
     >
       <input
