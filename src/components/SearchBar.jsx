@@ -5,7 +5,20 @@ export default function SearchBar( { onSearch } ) {
   const handlesubmit = (e) => {
     e.preventDefault()
 
-    const input = e.target.querySelector('input')
+    const input = e.target.querySelector('input') 
+
+
+    const isValidIPv4 = (ip) => {
+      const ipv4Regex = /^(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)){3}$/
+      const ipv6Regex = /^(([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}|::1)$/
+      return ipv4Regex.test(ip) || ipv6Regex.test(ip)
+    }
+
+    if (!isValidIPv4(input.value.trim())) { 
+      alert("Please enter a valid IPv4 address.")
+      return
+    }
+
     const ip = input.value.trim()
 
     if (ip) {
