@@ -13,7 +13,7 @@ This is my solution to the [Frontend Mentor](https://www.frontendmentor.io/chall
 - 📱 Mobile-first workflow
 - 🌐 [IP Geolocation API by IPify](https://geo.ipify.org/)
 - 🗺️ [LeafletJS](https://leafletjs.com/)
-- 🧩 Express.js (for backend server)
+- 🧩 Express.js (for local backend server)
 
 ## 🚀 Features
 
