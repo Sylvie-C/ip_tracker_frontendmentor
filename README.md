@@ -18,8 +18,6 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -54,7 +52,24 @@ Users should be able to:
 - 🗺️ Dynamic map centered on the searched location
 - 📦 Clean and modular folder structure
 - ♻️ Reusable React components
-- 🌍 Backend proxy server for API communication (between IPify and Leaflet APIs)
+- 🌍 Separate project for the backend proxy server, which fetches IP data using the **geo.ipify IP Geolocation API**.
+
+### Environment Variables
+
+For this frontend app with Vite7, set the **VITE_BACKEND_URL** environment variable in your .env file.  
+Value: your backend server URL.
+
+### Backend Server
+
+For security reasons, the backend server code remains private.  
+Here’s a code snippet for fetching data from the ipify IP Geolocation API:
+
+```
+const url = `https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}&ipAddress=${ip}`;
+try {
+    const response = await fetch(url);
+    ...
+```
 
 ### What I learned or practiced
 
@@ -62,10 +77,11 @@ While working on this challenge, I learned:
 
 - How to implement a geolocation API with geo.ipify.org
 - How to implement a dynamic map using LeafletJS
+- How to deploy and configure a backend server on Netlify
 
 I practiced:
 
-- Frontend-backend communication using a custom Express server
+- Frontend-backend communication using a custom local Express server
 - Asynchronous API handling
 
 ### Continued development
@@ -83,9 +99,11 @@ This project is deployed on [Netlify](https://www.netlify.com/).
 During local development, the frontend runs with Vite, and the backend is served using a custom Express server (`server.mjs`), which handles API communication with geo.ipify.org.
 
 ```bash
-# Run locally
+# Run locally with
 npm run dev
 ```
+
+Please refer to package.json for other scripts commands
 
 ## Author
 
