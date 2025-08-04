@@ -12,6 +12,8 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Features](#Features)
+  - [Environment Variable](#environment-variable)
+  - [Backend server](#backend-server)
   - [What I learned or practice](#what-i-learned-or-practiced)
   - [Continued development](#continued-development)
   - [Deployment](#deployment)
