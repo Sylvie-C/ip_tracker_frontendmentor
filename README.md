@@ -45,7 +45,13 @@ Users should be able to:
 - 📱 Mobile-first workflow
 - 🌐 [IP Geolocation API by IPify](https://geo.ipify.org/)
 - 🗺️ [LeafletJS](https://leafletjs.com/)
-- 🧩 Express.js (for local backend server)
+
+For the backend server, packages:
+
+- 🧩 Express.js (local development server)
+- 🌍 CORS
+- 🔒 dotenv
+- 🔄 node-fetch
 
 ### Features
 
