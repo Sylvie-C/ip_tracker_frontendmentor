@@ -13,6 +13,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
   - [Built with](#built-with)
   - [Features](#Features)
   - [Environment Variable](#environment-variable)
+  - [Run locally](#run-locally)
   - [Backend server](#backend-server)
   - [What I learned or practice](#what-i-learned-or-practiced)
   - [Continued development](#continued-development)
@@ -67,6 +68,16 @@ For the backend server, packages:
 For this frontend app with Vite7, set the **VITE_BACKEND_URL** environment variable in your .env file.  
 Value: your backend server URL.
 
+### Run locally
+
+Run locally with the following command (dev phase):
+
+```bash
+npm run dev
+```
+
+Please refer to package.json for other scripts commands.
+
 ### Backend Server
 
 For security reasons, the backend server code remains private.  
@@ -103,15 +114,6 @@ In future iterations, I'd like to:
 ### Deployment
 
 This project is deployed on [Netlify](https://www.netlify.com/).
-
-During local development, the frontend runs with Vite, and the backend is served using a custom Express server (`server.mjs`), which handles API communication with geo.ipify.org.
-
-```bash
-# Run locally with
-npm run dev
-```
-
-Please refer to package.json for other scripts commands
 
 ## Author
 
